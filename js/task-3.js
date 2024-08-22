@@ -1,6 +1,6 @@
 'use strict';
 function getElementWidth(content, padding, border) {
-  return content + 2 * padding + 2 * border;
+  return parseFloat(content) + (parseFloat(padding) + parseFloat(border)) * 2;
 }
 console.log(getElementWidth('50px', '8px', '4px')); // 74
 console.log(getElementWidth('60px', '12px', '8.5px')); // 101
